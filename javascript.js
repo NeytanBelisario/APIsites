@@ -23,7 +23,7 @@ function resultados(filmes){
     .then(function(informacoesFilmes){
         console.log(informacoesFilmes)
         var id = informacoesFilmes.Search[0].imdbID;
-        fetch(`http://www.omdbapi.com/?i=${id}&apikey=ec2d782a`)
+        fetch(`https://www.omdbapi.com/?i=${id}&apikey=ec2d782a`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Filme/série não encontrado`)
