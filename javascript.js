@@ -43,7 +43,11 @@ function resultados(filmes){
             var tipoFilme = mostrarFilmes.Type
             var temporadasSerie = mostrarFilmes.totalSeasons
             var filmesPesquisa = document.querySelector('.filmesPesquisa')
+            var footer = document.querySelector('.footer')
 
+            footer.style.position = "unset"
+            footer.style.marginTop = "5vh"
+            footer.style.marginBottom = "5vh"
             filmesPesquisa.style.display = "flex"
             poster.innerHTML = `<img src="${posterFilme}"></img>`
             atores.innerHTML = `<h4>${atoresFilme}</h4>`
