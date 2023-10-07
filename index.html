@@ -11,7 +11,8 @@
 <body>
     <header>
         <div id="logo">
-            <h2 style="margin-top: 4.5vh; color: floralwhite;">INFO</h2><h2 style="font-size:2.3rem"> MOVIES</h2>
+            <h2 style="margin-top: 4.5vh; color: floralwhite;">INFO</h2><h2 style="font-size:2.3rem;     margin-top: 0.6em;
+            margin-bottom: 0.6em;"> MOVIES</h2>
         </div>
     </header>
     <hr>
@@ -20,7 +21,7 @@
         <div class="pesquisa">
             <div class="caixaPesquisa">
                 <input class="inputPesquisa" type="text" placeholder="Digite o nome do filme/serie..." >
-                <button class="botaoPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="resultados(inputPesquisa.value)" class="botaoPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
         <div class="filmesPesquisa">
@@ -38,6 +39,8 @@
             </div>
         </div>
     </div>
+    <footer> 
+    </footer>
     <script src="javascript.js" type="text/javascript"></script>
 </body>
 </html>
