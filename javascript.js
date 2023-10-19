@@ -57,22 +57,15 @@ function resultados(filmes){
             data.innerHTML = `<h4>${dataFilme}</h4>`
             duracao.innerHTML = `<h4>${duracaoFilme}</h4>`
             titulo.innerHTML = `<h2>${tituloFilme}</h2>`
-            // tipo.innerHTML = `<h4>${tipoFilme}</h4>`
             if(tipoFilme == 'series'){
                 tipo.innerHTML = `<h4>${tipoFilme} - ${temporadasSerie} seasons </h4>`
-                // temporadas.innerHTML = `<h4>${temporadasSerie}</h4>`
             }
             else{
                 tipo.innerHTML = `<h4>${tipoFilme}</h4>`
-                // temporadasSerie.style.display = "none";
             }
         })
     })
 }
-
-// botaoPesquisa.addEventListener('onclick', function(){
-//     resultados(inputPesquisa.value)
-// })
 
 inputPesquisa.addEventListener('keypress', enter)
 
